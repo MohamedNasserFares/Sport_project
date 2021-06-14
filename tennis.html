@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tennis</title>
+    <style>
+        body{
+            background-image: url("images/ten.jpeg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .p{
+            color:gainsboro;
+            width: 600px;
+            font-size: 35px;
+            text-align: center;
+            padding: 7px;
+            line-height: 65px;
+            background-color: #333;
+            border: 2px solid darkred;
+            border-top-left-radius: 7%;
+            border-bottom-right-radius: 7%;
+            margin: auto;
+            margin-bottom: 20px;
+        }
+        .nav{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: dimgray;
+            position: sticky;
+            top: 0;
+        }
+        .nav li a{
+            display: block;
+            color: gainsboro;
+            text-align: center;
+            padding: 14px 16px 14px 30px;
+            text-decoration: none;
+            font-size: 25px;
+        }
+        .nav li a:hover{
+            background-color:darkred;
+        }
+        .nav li{
+            float: left;
+        }
+        .nav .home{
+            float: right;
+        } 
+        .nav .home a{
+            background-color: forestgreen;
+        }
+        .nav .home a:hover{
+            background-color: darkgreen;
+        }
+        h1{
+            text-align: center;
+            font-size: 50px;
+            background-color: darkred;
+            color: gainsboro;
+        }
+        h3{
+            text-align: center;
+            background-color:forestgreen;
+            padding: 15px;
+            font-size: 30px;
+            color: gainsboro;
+            margin-bottom: 20px;
+            border: 1px;
+            border-bottom-left-radius: 100%;
+            border-bottom-right-radius:100%;
+        }
+        #player{
+            color: gainsboro;
+            font-size: 40px;
+            margin: 50px;
+            padding: 10px;
+        }
+        #player li:hover{
+            background-color: #333;
+            border: 1px solid darkred;
+            border-top-right-radius: 8%;
+            border-bottom-left-radius: 8%;
+            padding: 5px;
+        }
+        .play{
+            display: none;
+            background-color: dimgray;
+            padding: 7px 8px 5px 40px;
+            border-top-right-radius: 5%;
+            border-bottom-left-radius: 5%;
+            font-size: 25px;
+            margin: 5px;
+            border: 1px solid darkred;
+        }
+        #player li:hover .play{
+            display:block;
+        }
+        .dd{
+            display: none;
+        }
+        @media only screen and (max-width:768px){
+            .nav{
+                display: none;
+                
+            }
+            .dd{
+                display: block;
+                width: 55px;
+                height: 50px;
+                text-align: center;
+                position:sticky;
+                top: 0;
+                background-color: darkred;
+                float: left;
+                border-bottom-right-radius: 50%;
+                border-bottom-left-radius:50%;
+                margin-top: -60px;
+            }
+            .dd:hover{
+                background-color: gray;
+                border: .5px solid black;
+                border-radius: 0%;
+                width:100px ;
+            }
+            .dd img{
+                width: 40px;
+                height: 35px;
+                padding: 2px;
+            }
+            .dc{
+                display: none;
+                position: absolute;
+                background-color: gray;
+                width: 100%;
+                margin-top: 10px;
+            }
+            .dc a {
+                color: black;
+                padding: 10px 5px;
+                text-decoration: none;
+                display:block;
+                border: 1px solid black;
+            }
+            .dc a:hover{
+                background-color: darkred;
+                color: gainsboro;
+            }
+            .dd:hover .dc{
+                display: block;
+            }
+            .p{
+                font-size: 25px;
+                width: 80%;
+                margin-top: 40px ;
+                margin-bottom: 40px;
+            }
+            }
+    </style>
+</head>
+<body>
+    <h1>Tennis</h1>
+    <ul class="nav">
+        <li> <a href="#int">introduction</a></li>
+        <li> <a href="#his">Tennis history</a></li>
+        <li><a href="#player">The most famous players</a></li>
+        <li class="home"> <a href="index.html">Home</a></li>
+    </ul>
+    <div class="dd">
+        <div class="icon"><img src="images/dd.png" alt=""></div>
+        <div class="dc">
+            <a href="index.html">Home</a>
+            <a href="#int">Introduction</a>
+            <a href="#his">Tennis history</a>
+            <a href="#player">players</a>
+        </div>
+    </div>
+    <h3 id="int">Introduction</h3>
+    <div class="p">
+        <p>
+            Tennis (or tennis in the literal translation) is a type of recreational sport
+            in which two players compete in singles matches, 
+            or two teams of players compete in doubles matches. 
+            Each holds a racket to use to hit the ball over the net in the opponent's area.
+            The number of offenses is not specified, but the score determines the winner.
+            Racket or tennis is an Olympic sport that is played at all levels 
+            and groups of society and for all ages.
+            Anyone can hold a racket and hit the ball, including people with disabilities and wheelchair users.
+            Modern tennis originated in Birmingham, England in the late 19th century as a sport played on grass,
+            so it is closely related to both field games such as cricket and bowling, 
+            as well as the ancient sport of racquet. Modern tennis rules have changed little since the 1890s,
+            with two exceptions: From 1908 to 1961, a player was required to put one foot on 
+            the ground at all times of a match, and in the 1970s a tiebreak was introduced.
+            One of the recent additions to the game at the professional level is the adoption of 
+            the electronic review technology (Eye of the Falcon) in addition to the points challenge system.
+        </p>
+    </div>
+    <h3 id="his">Tennis history</h3>
+    <div class="p">
+        <p>
+            A game of ball and racket that has its origins in the eleventh century AD 
+            when the French lira arose, a stroke known as the tennis court,
+            and then became popular in French royal circles during the sixteenth and seventeenth centuries,
+            and was played with courtyard fences. The modern game of tennis originated in England in 1873.
+        </p>
+    </div>
+    <h3>The most famous players...</h3>
+    <ul id="player">
+        <li>Roger Federer...<span class="play">"Roger Federer is a Swiss professional tennis player who managed to stay
+            in the top ten ranked in the world continuously from October 2002 until November 2016,
+            and among the top twenty ranked since April 2001 until now."</span></li>
+        <li>Rafael Nadal...<span class="play">"He is a Spanish tennis player. And one of the players who rose to 
+            the top of the world rankings for the game, and some analysts and critics believe that Nadal will become 
+            the greatest tennis player of all time."</span></li>
+        <li>Rod Laver...<span class="play">"Rod Laver, born August 9, 1938, is an Australian tennis player. 
+            The main court of the Australian Open tennis tournament is named after him. He is the only player to win 
+            all four major tennis tournaments in the same year, a feat called a Grand Slam."</span></li>
+        <li>Serena Williams... <span class="play">"Serena Williams, Michigan, USA. She is an American professional 
+            tennis player, currently ranked No. 1 in women's singles tennis, and has been world number one on 6 separate 
+            occasions."</span></li>
+        <li>Venus Williams... <span class="play">"Venus Williams is an American professional tennis player. 
+            She has won 22 Grand Slam titles, including 7 in singles, 13 in women's doubles, and 2 in mixed doubles.
+            On February 25, 2000, she became number one in the world, 
+            becoming the first African American to reach that rank."</span></li>
+        <li>Pete Sampras... <span class="play">"Peter Sampras, born August 12, 1971, is an American of Greek origin, 
+            formerly ranked first in the world, and is considered one of the best tennis players of all time. 
+            He won 14 major singles championships, ranked first in the world rankings for six consecutive years, 
+            and holds the record for winning Wimbledon With 7 wins."</span></li>
+    </ul>
+</body>
+</html>

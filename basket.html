@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basketball</title>
+    <style>
+        body{
+            background-image: url("images/bask.jpg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size:100% 100%;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .p{
+            color:gainsboro;
+            width: 700px;
+            font-size: 35px;
+            text-align: center;
+            margin: auto;
+            padding: 10px;
+            line-height: 65px;
+            background-color: #333;
+            border: 2px solid darkred;
+            border-top-left-radius: 7%;
+            border-bottom-right-radius: 7%;
+            margin-bottom: 20px;
+        }
+        ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: dimgray;
+            position: sticky;
+            top: 0;
+        }
+        li a{
+            display: block;
+            color: gainsboro;
+            text-align: center;
+            padding: 14px 10px 14px 30px;
+            text-decoration: none;
+            font-size: 25px;
+        }
+        a:hover{
+            background-color:darkred;
+        }
+        li{
+            float: left;
+        }
+        .home{
+            float: right;
+        } 
+        .home a{
+            background-color: forestgreen;
+        }
+        .home a:hover{
+            background-color: darkgreen;
+        }
+        h1{ 
+            text-align: center;
+            font-size: 50px;
+            background-color: darkred;
+            color: gainsboro;
+        }
+        h3{
+            text-align: center;
+            background-color:forestgreen;
+            padding: 15px;
+            font-size: 30px;
+            color: gainsboro;
+            margin-bottom: 20px;
+            border: 1px;
+            border-bottom-left-radius: 100%;
+            border-bottom-right-radius:100% ;
+        }
+        #table {
+            text-align: center;
+            width: 90%;
+            height: 400px;
+            margin:auto;
+            margin-bottom: 20px;
+            margin-top: 30px;
+        }
+        tr, th ,td{
+            border: 1px solid black;
+            margin: 0px;
+            color: rgb(102, 11, 11);
+            background-color: gray;
+        }
+        th{
+            font-size: 40px;
+            background-color: #333;
+            color: gainsboro;       
+        }
+        td{
+            font-size: 30px;
+            border: none;
+        }
+        caption{
+            font-size: 30px;
+            background-color: forestgreen;
+            color: gainsboro;
+            padding: 20px;
+            border: 1px;
+            border-top-left-radius: 90%;
+            border-top-right-radius:90% ;
+        }
+        #ts{
+            display: none;
+        }
+        .dd{
+            display: none;
+        }
+        @media only screen and (max-width:800px){
+            ul{
+                display: none;
+            }
+            .dd{
+                display: block;
+                width: 55px;
+                height: 50px;
+                text-align: center;
+                position:sticky;
+                top: 0;
+                background-color: darkred;
+                float: left;
+                border-bottom-right-radius: 50%;
+                border-bottom-left-radius:50%;
+                margin-top: -60px;
+            }
+            .dd:hover{
+                background-color: gray;
+                border: .5px solid black;
+                border-radius: 0%;
+                width:100px ;
+            }
+            .dd img{
+                width: 40px;
+                height: 35px;
+                padding: 2px;
+            }
+            .dc{
+                display: none;
+                position: absolute;
+                background-color: gray;
+                width: 100%;
+                margin-top: 10px;
+            }
+            .dc a {
+                color: black;
+                padding: 10px 5px;
+                text-decoration: none;
+                display:block;
+                border: 1px solid black;
+            }
+            .dc a:hover{
+                color: gainsboro;
+            }
+            .dd:hover .dc{
+                display: block;
+            }
+            .p{
+                font-size: 25px;
+                width: 80%;
+                margin-top: 40px ;
+                margin-bottom: 40px;
+            }
+            #table{
+                display: none;
+            }
+            #ts{
+                display: block;
+                margin: auto;
+                margin-bottom: 20px;
+                width: 80%;
+            }
+            th{
+                padding: 10px;
+            }
+            td{
+                padding: 5px;
+                text-align: center;
+                width: 50%;
+            }
+            }
+    </style>
+</head>
+<body>
+    <h1>Basketball</h1>
+    <ul>
+        <li> <a href="#p1">introduction</a></li>
+        <li> <a href="#p2">Basketball history</a></li>
+        <li><a href="#table">The most famous clubs</a></li>
+        <li class="home"> <a href="index.html">Home</a></li>
+    </ul>
+    <div class="dd">
+        <div class="icon"><img src="images/dd.png" alt=""></div>
+        <div class="dc">
+            <a href="index.html">Home</a>
+            <a href="#p1">Introduction</a>
+            <a href="#p2">Basketball history</a>
+            <a href="#ts">Clubs</a>
+        </div>
+    </div>
+    <h3 id="p1">Introduction</h3>
+    <div class="p">
+        <p>
+            Basketball is a popular team sport in which two teams of five players each compete.
+            They both try to get the ball into the opponent's basket,score goals and earn points.
+            Points are scored by inserting the ball into the 3-meter basket;
+            The team that scores more points than its opponent at the end of the match wins,
+            so it is more difficult for both teams to score. 
+            The player can move the ball forward by bouncing it on the field in what is known as 
+            (dribbling) or passing it to his teammates to reach the goal.
+            No physical contact is allowed to obstruct a player (foul) and there are restrictions on how
+            the ball is handled known as (the rules of play).
+        </p>
+    </div>
+    <h3 id="p2">Basketball history</h3>
+    <div class="p">
+        <p>
+            First basketball court: Springfield College.
+            In early December 1891, Canadian Dr. James Naismith, Professor of Physical Education at
+            McGill University in Montreal, who also worked as an instructor at the YMCA Training School
+            (now Springfield College in Springfield, Massachusetts, USA) conducted research on creating 
+            a strong indoor game venue that His students occupy and maintain their physical fitness
+            at appropriate levels in the long winters that prevail in the states located in 
+            the New England region, and this was the game of basketball.
+        </p>
+    </div>
+    <table id="table">
+            <caption>The most famous clubs...</caption>
+            <tr class="r1">
+                <th>EGYPT</th>
+                <th>ENGLEND</th>
+                <th>USA</th>
+                <th>GERMANY</th>
+            </tr>
+            <tr>
+                <td>Alahly</td>
+                <td>Bristol Flyers</td>
+                <td> Los Angeles Lakers</td>
+                <td>Hambufg Towers</td>
+            </tr>
+            <tr>
+                <td>Zamalek</td>
+                <td>London Lions</td>
+                <td>Chicago Bulls</td>
+                <td>Alba Berlin</td>
+            </tr>
+    </table>
+    <table id="ts">
+        <caption>The most famous clubs...</caption>
+        <tr>
+            <th colspan="2">EGYPT</th>
+        </tr>
+        <tr>
+            <td>Alahly</td>
+            <td>Zamalek</td>
+        </tr>
+        <tr>
+            <th colspan="2">ENGLEND</th>
+        </tr>
+        <tr>
+            <td>Bristol Flyers</td>
+            <td>London Lions</td>
+        </tr>
+        <tr>
+            <th colspan="2">USA</th>
+        </tr>
+        <tr>
+            <td>Los Angeles Lakers</td>
+            <td>Chicago Bulls</td>
+        </tr>
+        <tr>
+            <th colspan="2">GERMANY</th>
+        </tr>
+        <tr>
+            <td>Hambufg Towers</td>
+            <td>Alba Berlin</td>
+        </tr>
+    </table>
+</body>
+</html>

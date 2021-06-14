@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Football</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-image: url("images/foot.jpg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size:100% 100%;
+        }
+        h1{
+            color: gainsboro;
+            text-align: center;
+            font-size: 50px;
+            padding: 10px 0px;
+            background-color: darkred;
+            
+        }
+        .p{
+            color:gainsboro;
+            width: 600px;
+            font-size: 35px;
+            text-align: center;
+            padding: 7px;
+            line-height: 65px;
+            background-color: #333;
+            border: 2px solid darkred;
+            border-top-left-radius: 7%;
+            border-bottom-right-radius: 7%;
+            margin: auto;
+            margin-bottom: 20px;
+        }
+        ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: dimgray;
+            position: sticky;
+            top: 0;
+        }
+        li a{
+            display: block;
+            color: gainsboro;
+            text-align: center;
+            padding: 14px 16px 14px 40px;
+            text-decoration: none;
+            font-size: 25px;
+        }
+        a:hover{
+            background-color:darkred;
+        }
+        li{
+            float: left;
+        }
+        .home{
+            float: right;
+        } 
+        .home a{
+            background-color: forestgreen;
+        }
+        .home a:hover{
+            background-color: darkgreen;
+        }
+        h3{
+            text-align: center;
+            background-color:forestgreen;
+            padding: 15px;
+            font-size: 30px;
+            color: gainsboro;
+            margin-bottom: 20px;
+            border: 1px;
+            border-bottom-left-radius: 100%;
+            border-bottom-right-radius:100%;
+        }
+        #table {
+            text-align: center;
+            width: 90%;
+            height: 400px;
+            margin:auto;
+            margin-bottom: 20px;
+            margin-top: 30px;
+        }
+        tr, th ,td{
+            border: 1px solid black;
+            margin: 0px;
+            color: rgb(102, 11, 11);
+            background-color:gray;
+        }
+        th{
+            font-size: 40px;
+            background-color: #333;
+            color: gainsboro;     
+            }
+        td{
+            font-size: 30px;
+            border: none;
+        }
+        caption{
+            font-size: 30px;
+            background-color: forestgreen;
+            color: gainsboro;
+            padding: 20px;
+            border: 1px;
+            border-top-left-radius: 90%;
+            border-top-right-radius:90% ;
+        }
+        #ts{
+            display: none;
+        }
+        .dd{
+            display: none;
+        }
+        p{
+            margin: 0px 0px 20px 20px; 
+        }
+        @media only screen and (max-width:768px){
+            ul{
+                display: none;
+            }
+            .dd{
+                display: block;
+                width: 55px;
+                height: 50px;
+                text-align: center;
+                position:sticky;
+                top: 0;
+                background-color: darkred;
+                float: left;
+                border-bottom-right-radius: 50%;
+                border-bottom-left-radius:50%;
+                margin-top: -60px;
+            }
+            .dd:hover{
+                background-color: gray;
+                border: 1px solid black;
+                border-radius: 0%;
+                width:100px ;
+            }
+            .dd img{
+                width: 40px;
+                height: 35px;
+                padding: 2px;
+            }
+            .dc{
+                display: none;
+                position: absolute;
+                background-color: gray;
+                width: 100%;
+                margin-top: 10px;
+            }
+            .dc a {
+                color: black;
+                padding: 10px 5px;
+                text-decoration: none;
+                display:block;
+                border: 1px solid black;
+            }
+            .dc a:hover{
+                color: gainsboro;
+            }
+            .dd:hover .dc{
+                display: block;
+            }
+            
+            #table{
+                display: none;
+            }
+            #ts{
+                display: block;
+                margin: auto;
+                margin-bottom: 20px;
+                width: 80%;
+            }
+            th{
+                padding: 10px;
+            }
+            td{
+                padding: 5px;
+                text-align: center;
+            }
+            .p{
+                font-size: 25px;
+                width: 80%;
+                margin-top: 40px ;
+                margin-bottom: 40px;
+            }
+            }
+    </style>
+    <title>Football</title>
+</head>
+<body>
+    <h1>Football</h1>
+    <ul>
+        <li> <a href="#p1">introduction</a></li>
+        <li> <a href="#p2">Etymology</a></li>
+        <li><a href="#table">The most famous clubs</a></li>
+        <li class="home"> <a href="index.html">Home</a></li>
+    </ul>
+    <div class="dd">
+        <div class="icon"><img src="images/dd.png" alt=""></div>
+        <div class="dc">
+            <a href="index.html">Home</a>
+            <a href="#p1">Introduction</a>
+            <a href="#p2">Etymology</a>
+            <a href="#ts">Clubs</a>
+        </div>
+    </div>
+    <h3 id="p1">Introduction</h3>
+    <div class="p">
+        <p>
+        Football is a team sport played between two teams of eleven players each playing with a ball.
+        Football is played by 250 million players in more than two hundred countries around the world,
+        so it is the most popular and widespread sport in the world. 
+        Football is played on a rectangular court with two goals in either side.
+        The aim of the game is to score goals by kicking the ball into the goal.
+        </p>
+    </div>
+    <h3 id="p2">Etymology</h3>
+    <div class="p">
+        <p>
+        There are conflicting interpretations of the origin of the word "football".
+        It is widely assumed that the word "soccer" (or the phrase "soccer") refers
+        to the act of kicking a ball with the foot.
+        An alternative explanation is that soccer originally referred to 
+        a variety of games in medieval Europe that were played on foot. 
+        There is no conclusive evidence for either interpretation.
+        </p>
+    </div>
+    <table id="table">
+            <caption>The most famous clubs...</caption>
+            <tr>
+                <th>EGYPT</th>
+                <th>ENGLEND</th>
+                <th>SPAIN</th>
+                <th>GERMANY</th>
+            </tr>
+            <tr>
+                <td>Alahly</td>
+                <td>Manchester United</td>
+                <td>Real Madrid</td>
+                <td>Bayern Munich</td>
+            </tr>
+            <tr>
+                <td>Zamalek</td>
+                <td>Liverpool</td>
+                <td>Barcelona</td>
+                <td>Borussia Dortmund</td>
+            </tr>
+    </table>
+    <table id="ts">
+        <caption>The most famous clubs...</caption>
+        <tr>
+            <th colspan="2">EGYPT</th>
+        </tr>
+        <tr>
+            <td>Alahly</td>
+            <td>Zamalek</td>
+        </tr>
+        <tr>
+            <th colspan="2">ENGLEND</th>
+        </tr>
+        <tr>
+            <td>Manchester United</td>
+            <td>Liverpool</td>
+        </tr>
+        <tr>
+            <th colspan="2">SPAIN</th>
+        </tr>
+        <tr>
+            <td>Real Madrid</td>
+            <td>Barcelona</td>
+        </tr>
+        <tr>
+            <th colspan="2">GERMANY</th>
+        </tr>
+        <tr>
+            <td>Bayern Munich</td>
+            <td>Borussia Dortmund</td>
+        </tr>
+    </table>
+</body>
+</html>

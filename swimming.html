@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swimming</title>
+    <style>
+        body{
+            background-image: url("images/swimming.jpg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        #p1 , #p2 ,#p3{
+            color:gainsboro;
+            width: 700px;
+            font-size: 35px;
+            text-align: center;
+            line-height: 65px;
+            background-color: #333;
+            border: 2px solid darkred;
+            border-top-left-radius: 7%;
+            border-bottom-right-radius: 7%;
+            margin: auto;
+            padding: 7px;
+            background-color: #333;
+            margin-bottom:20px ;
+        }
+        .nav{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: dimgray;
+            position: sticky;
+            top: 0;
+        }
+        .nav li a{
+            display: block;
+            color: gainsboro;
+            text-align: center;
+            padding: 14px 16px 14px 40px;
+            text-decoration: none;
+            font-size: 25px;
+        }
+        .nav li a:hover{
+            background-color:darkred;
+            color: gainsboro;
+        }
+        .nav li{
+            float: left;
+        }
+        .nav .home{
+            float: right;
+        } 
+        .nav .home a{
+            background-color: forestgreen;
+        }
+        .nav .home a:hover{
+            background-color: darkgreen;
+        }
+        h1{
+            text-align: center;
+            font-size: 50px;
+            background-color: darkred;
+            color: gainsboro;
+        }
+        h3{
+            text-align: center;
+            background-color:forestgreen;
+            padding: 15px;
+            font-size: 30px;
+            color: gainsboro;
+            margin-bottom: 20px;
+            border: 1px;
+            border-bottom-left-radius: 100%;
+            border-bottom-right-radius:100%;
+        }
+        #player{
+            color: gainsboro;
+            font-size: 40px;
+            margin: 50px;
+        }
+        p{
+            margin: 0px 0px 20px 20px; 
+        }
+        .dd{
+            display: none;
+        }
+        @media only screen and (max-width:800px){
+            .nav{
+                display: none;
+                
+            }
+            .dd{
+                display: block;
+                width: 55px;
+                height: 50px;
+                text-align: center;
+                position:sticky;
+                top: 0;
+                background-color: darkred;
+                float: left;
+                border-bottom-right-radius: 50%;
+                border-bottom-left-radius:50%;
+                margin-top: -60px;
+            }
+            .dd:hover{
+                background-color: gray;
+                border: .5px solid black;
+                border-radius: 0%;
+                width:100px ;
+            }
+            .dd img{
+                width: 40px;
+                height: 35px;
+                padding: 2px;
+            }
+            .dc{
+                display: none;
+                position: absolute;
+                background-color: gray;
+                width: 100%;
+                margin-top: 10px;
+            }
+            .dc a {
+                color: black;
+                padding: 10px 5px;
+                text-decoration: none;
+                display:block;
+                border: 1px solid black;
+            }
+            .dc a:hover{
+                background-color: darkred;
+                color: gainsboro;
+            }
+            .dd:hover .dc{
+                display: block;
+            }
+            #p1 , #p2 ,#p3{
+                font-size: 25px;
+                width: 80%;
+                margin-top: 40px ;
+                margin-bottom: 40px;
+            }
+            }
+    </style>
+</head>
+<body>
+    <h1>Swimming</h1>
+    <ul class="nav">
+        <li> <a href="#int">introduction</a></li>
+        <li> <a href="#hb">Health benefits</a></li>
+        <li><a href="#cj">Common injuries</a></li>
+        <li class="home"> <a href="index.html">Home</a></li>
+    </ul>
+    <div class="dd">
+        <div class="icon"><img src="images/dd.png" alt=""></div>
+        <div class="dc">
+            <a href="index.html">Home</a>
+            <a href="#int">Introduction</a>
+            <a href="#hb">Health benefits</a>
+            <a href="#cj">Common injuries</a>
+        </div>
+    </div>
+    <h3 id="int">Introduction</h3>
+    <div id="p1">
+        <p>
+              Swimming is one of the most popular and practiced sports, 
+            some consider it the pinnacle of fun, and the sport that always provides them with
+            activity and vitality. Swimming is basically the movement by which organisms move in 
+            the water without traveling at the bottom of the surface of the water or the water basin. 
+            Swimming dates back to the Stone Age more than 10,000 years ago,
+            and the first indoor pool was opened in 1828 under the name St. George to the public.
+            Competitions in this field emerged as a recreational activity in the English state during 
+            the year 1830 AD, and in 1837 the National Swimming Association was established by 
+            holding regular swimming competitions in six artificial swimming pools located in 
+            the city of London, and in 1880 the National Swimming Association was established.
+            The recreational activity of swimming was the most important.
+            It has a national governing body, an amateur swimmers' association,
+            and more than 300 regional clubs from across the country. 
+            Two Americans participated in the London swimming competition in 1844,
+            and this is one of the reasons that led to the spread of the game in the world,
+            and Captain Matthew Webb was the first man to swim in the English Channel 
+            between England and France in 1875, on his chest,
+            and covered a distance of 34.21 kilometers during 41 An hour and 45 minutes,
+            after that European countries established swimming federations such as Germany,
+            France and Hungary, and the first competitions in the entire European continent 
+            were for amateurs in 1889 in the Austrian capital Vienna, and the first women's swimming
+            championship was held in Scotland during 1892, and this game became for men,
+            It is part of the first modern Olympic Games in 1896 that were held in Athens.
+            Swimming is developing day by day. In the old days, this was very necessary,
+            especially for soldiers. Hence what Omar Ibn Al-Khattab, may God be pleased with him,
+            said in our Islamic heritage is well known: (Teach your children swimming, 
+            archery and horse riding), but today swimming has another role. It is considered one of 
+            the recreational and sports activities that bring many important benefits to the body,
+            in addition to being a global sport that has its own competitions, leagues and laws.
+            This is one of the most important sports in the Olympic Games.
+        </p>
+    </div>
+    <h3 id="hb">Health benefits</h3>
+    <div id="p2">
+        <p>
+            Swimming is a healthy activity that can be done by most people throughout their life.
+            It is a low-impact workout that has several mental and bodily health benefits all
+            while being a good recreational activity. Swimming builds endurance, muscle strength,
+            and cardiovascular fitness. Correspondingly,
+            it also improves weight loss while being a safer alternative of working out for someone
+            who is injured or for women who are pregnant. Swimming requires less effort than other sports,
+            but the athletes will get the results they are looking for. 
+            The U.S. Census Bureau reports that two and a half hours per week of aerobic physical
+            activity such as swimming can decrease the risk of chronic illnesses,
+            and help regenerate healthy cells. Furthermore, swimming is linked to better
+            cognitive function; also lowering the risk of Type II diabetes, high blood pressure,
+            and a stroke. It can improve lung and heart strength while it tones muscles in
+            a full body workout. People can typically exercise longer in water than
+            on land without increased effort and minimal joint or muscle pain.
+            When in the water the body undergoes less physical stress thus releasing pressure from the joints.
+        </p>
+    </div>
+    <h3 id="cj">Common injuries</h3>
+    <div id="p3">
+        <p>
+            The rotator cuff in the shoulder is most susceptible to injury in swimmers.
+            Injury to the rotator cuff results from repeated trauma and overuse.
+            The joints are more prone to injury when the arm is repetitively used in a position above 
+            the horizontal line of the body. This position occurs in each of the four swimming strokes 
+            in every cycle of the arms. Out of the four tendons in the rotator cuff, 
+            the supraspinatus is most prone to tearing. Rotator cuff impingement is due to pressure on 
+            the rotator cuff from part of the scapula as the arm is raised.
+            The best way to prevent injury is catching the issue early. Typically, poor technique 
+            and over excessive use of the muscle group can be the primary causes of injury. 
+            Through communication between swimmers, coaches, parents, and medical professionals, 
+            any issue can be diagnosed prior to a serious injury. Additionally, proper warm-up, stretches,
+            and strength training exercises should be completed before any rigorous movements.
+        </p>
+    </div>
+</body>
+</html>
